@@ -1,7 +1,8 @@
 from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
 from dogs import DOGS
-from routes.route import router
+
+# from routes.route import router
 
 # name = "David"
 
@@ -31,4 +32,4 @@ async def login(request: Request):
     )
 
 
-app.include_router(router)
+# app.include_router(router)
