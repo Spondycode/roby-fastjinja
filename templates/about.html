@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+{% block content %}
+<div class=container>
+<h1>About Stuff and Nonsense</h1>
+
+<p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. </p>
+
+<p>This is where the names were !!</p>
+  <div>
+  <table class="table">
+    <tr>
+      <th>Dog Name</th>
+      <th>Dog Type</th>
+    </tr>
+    {% for dog in dogs %}
+    <tr>
+      <td>
+        {{ dog.name}}
+      </td>
+      <td>
+        {{ dog.type}}
+      </td>
+        {% endfor %}
+    </tr>
+  </table>
+  </div>
+</div>
+{% endblock %}
